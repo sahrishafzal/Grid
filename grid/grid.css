@@ -1,0 +1,76 @@
+body {
+    background-repeat: no-repeat;
+    color: black;
+    margin: 0;
+    padding: 35px 70px 200px 70px;
+  }
+  
+  /* offset page header height by height of the top header*/
+  h1 {
+    padding-top: 100px;
+  }
+  
+  h2 {
+    padding-top: 80px;
+  }
+  
+  div {
+    padding-bottom: 30px;
+  }
+  
+  .code {
+    font-family: courier;
+  }
+  
+  .intro {
+    color: black;
+    margin-top: 25px;
+  }
+  
+  .heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+  }
+  
+  /*
+    ##################################
+    ######## Container Styles ########
+    ##################################
+  
+    Note the 3 levels of nesting in the HTML
+    <main>
+      <div>
+        <img src="">
+      </div>
+    </main>
+  
+    CSS Grid controls children but what about the third level images?
+    How do you make the images responsive?
+    Check the solution to see the result but give this a good effort before doing so if you can.
+  */
+  .grid-city{
+    display:grid;
+  /*   grid-template-columns:repeat(auto-fit,minmax(500px,1fr)); */
+    grid-template-columns:repeat(3,1fr);
+  /*   grid-auto-rows:1fr; */
+    grid-gap:25px;
+  /*   border:2px solid red; */
+  /*    overflow:hidden;  */
+     
+  }
+  div{
+  /*   border:2px solid green; */
+    padding-bottom:0;
+  }
+  img{
+  /*   background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center; */
+    max-width:100%;
+    height:height;
+    display:block;
+  /*   border:2px solid yellow; */
+    padding:0;
+    margin:0;
+  }
+  
